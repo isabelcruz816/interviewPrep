@@ -11,13 +11,13 @@ bool isUnique(string str)
     int uniqueChar[128] = {0};
     for (int i = 0; i < str.length(); i++)
     {
-        if (uniqueChar[int(str[i])] == 1)
+        if (uniqueChar[str[i]] == 1)
         {
             return false;
         }
         else
         {
-            uniqueChar[int(str[i])] = 1;
+            uniqueChar[str[i]] = 1;
         }
     }
     return true;
