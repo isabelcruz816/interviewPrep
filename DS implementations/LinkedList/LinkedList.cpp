@@ -42,7 +42,10 @@ void LinkedList :: showList() {
 
     while(curr != NULL){
         std::cout << curr->val;
-        std::cout << "->";
+
+        if(curr->next != NULL)
+            std::cout << "->";
+            
         curr = curr->next;
     }
     
